@@ -1,0 +1,133 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(44, 66, 81, 1);
+
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.btn_1 {
+      position: relative;
+      display: inline-block;
+      background: transparent;
+      border: 2px; padding: 10px 20px;
+      transition: all .35s ease-in-out;
+      text-align: center;
+      font-weight: bold;
+      color: #ECB172;
+      text-transform: uppercase;
+    }
+
+    .wrapper {
+      max-width: 280px;
+      text-align: center;
+      position: relative;
+      margin: auto;
+    }
+
+    .btn_1:before,
+    .btn_1:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-style: solid;
+      width: 16px; height: 16px;
+      transition: all .35s ease-in-out;
+    }
+
+    .btn_1:before {
+      top: -7px; left: -7px;
+      border-width: 2px 0 0 2px;
+      z-index: 9;
+    }
+
+    .btn_1:after {
+      bottom: -7px; right: -7px;
+      border-width: 0 2px 2px 0;
+    }
+
+    .btn_1:hover:before, .btn_1:hover:after {
+      width: calc(100% + 10px);
+      height: calc(100% + 12px);
+      border-color: #FFF;
+    }
+
+    .btn_1:hover {
+      color: white;
+      background-color: #FFF;
+      border-color: #FFF;
+    }
+
+    .btn_1:before, .btn_1:after {
+      border-color: red;
+    }
+
+    .btn_1:hover:before, .btn_1:hover:after {
+      border-color: #FAD06A;
+    }
+
+    .btn_1:hover {
+      color: ;
+      background-color: grey;
+      border-color: #FAD06A;
+    }
+
+    /* NAV BAR */
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .active, .btn:hover {
+      background-color: #666;
+      color: white;
+    }

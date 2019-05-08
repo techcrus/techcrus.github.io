@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>TechCrus Labs</title>
+	<style>
+		* { box-sizing: border-box }
+
+		body{ background: rgba(44, 66, 81, 1); }
+
+		.btn_1 {
+			position: relative;
+			display: inline-block;
+			background: transparent;
+			border: 2px; padding: 10px 20px;
+			transition: all .35s ease-in-out;
+			text-align: center;
+			font-weight: bold;
+			color: #ECB172;
+			text-transform: uppercase;
+		}
+
+		.wrapper {
+			max-width: 280px;
+			text-align: center;
+			position: relative;
+			margin: auto;
+		}
+
+		.btn_1:before,
+		.btn_1:after {
+			content: '';
+			display: block;
+			position: absolute;
+			border-style: solid;
+			width: 16px; height: 16px;
+			transition: all .35s ease-in-out;
+		}
+
+		.btn_1:before {
+			top: -7px; left: -7px;
+			border-width: 2px 0 0 2px;
+			z-index: 9;
+		}
+
+		.btn_1:after {
+			bottom: -7px; right: -7px;
+			border-width: 0 2px 2px 0;
+		}
+
+		.btn_1:hover:before, .btn_1:hover:after {
+			width: calc(100% + 10px);
+			height: calc(100% + 12px);
+			border-color: #FFF;
+		}
+
+		.btn_1:hover {
+			color: white;
+			background-color: #FFF;
+			border-color: #FFF;
+		}
+
+		.btn_1:before, .btn_1:after {
+			border-color: red;
+		}
+
+		.btn_1:hover:before, .btn_1:hover:after {
+			border-color: #FAD06A;
+		}
+
+		.btn_1:hover {
+			color: ;
+			background-color: grey;
+			border-color: #FAD06A;
+		}
+
+		/* NAV BAR */
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+		  background-color: #111;
+		}
+
+		.active, .btn:hover {
+		  background-color: #666;
+		  color: white;
+		}
+
+</style>
+</head>
+<body>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<ul align="center">
+  <li><a class="btn active" href="#home">Home</a></li>
+  <li><a href="#news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="techcrus.html">TechHack</a></li>
+</ul>
+
+	<div>
+		<h1 class="head-text" align="center" style="color: white;">Techcrus Labs</h1>
+	</div>
+
+	<div class="wrapper">
+		<button class="btn_1">
+			Register / Login
+		</button>
+	</div>
+
+		<div align="center" style="border: 2px; padding: 10px 20px; ">
+			<h2 style="color: white;">What is Lorem Ipsum?</h2><p style="color: white;">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+
+<div align="center" style="color: white;">
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+<p><strong>Note:</strong> The section tag is not supported in Internet Explorer 8 and earlier versions.</p>
+</div>
+
+	
+</body>
+
+
+</html>

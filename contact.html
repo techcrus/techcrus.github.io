@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact|Techrus</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <style type="text/css">
+#cent {
+  position:absolute;
+  top:15%;
+  left:2%;
+  margin-top:-50px; /* this is half the height of your div*/  
+  margin-left:-10px; /*this is half of width of your div*/
+  border-color: black;
+  border-width: 2px;
+}
+
+#cent-right {
+  position:absolute;
+  top:15%;
+  left:82%;
+  margin-top:10px; /* this is half the height of your div*/  
+  margin-left:-90px; /*this is half of width of your div*/
+  border-color: black;
+  border-width: 2px;
+}
+  </style>
+</head>
+<body>
+
+<ul align="center">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#news.html">News</a></li>
+  <li><a class="btn active" href="contact.html">Contact</a></li>
+  <li><a href="techcrus.html">TechHack</a></li>
+</ul>
+
+  <div id=cent>
+    <h3 style="color: white">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php" >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">District</label>
+    <select id="country" name="country">
+      <option value="Hobbyist">Hobbyist</option>
+      <option value="School">School</option>
+      <option value="High School">High School</option>
+      <option value="Collage">Collage</option>
+      <option value="Professional">Professional</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </div>
+
+<div id=cent-right>
+  <div class="container">
+    <label for="country">District</label>
+    <select id="country" name="country">
+      <option value="Hobbyist">Hobbyist</option>
+      <option value="School">School</option>
+      <option value="High School">High School</option>
+      <option value="Collage">Collage</option>
+      <option value="Professional">Professional</option>
+    </select>
+  </div>
+</div>
+</body>
+</html>
